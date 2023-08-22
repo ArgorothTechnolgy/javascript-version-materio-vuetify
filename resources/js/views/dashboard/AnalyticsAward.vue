@@ -1,8 +1,8 @@
 <script setup>
-import triangleDark from '@images/misc/triangle-dark.png'
-import triangleLight from '@images/misc/triangle-light.png'
-import trophy from '@images/misc/trophy.png'
-import { useTheme } from 'vuetify'
+import triangleDark from '@images/misc/triangle-dark.png';
+import triangleLight from '@images/misc/triangle-light.png';
+import trophy from '@images/misc/trophy.png';
+import { useTheme } from 'vuetify';
 
 const { global } = useTheme()
 const triangleBg = computed(() => global.name.value === 'light' ? triangleLight : triangleDark)
