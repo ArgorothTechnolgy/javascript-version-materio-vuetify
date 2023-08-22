@@ -1,11 +1,11 @@
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
+import laravel from 'laravel-vite-plugin'
 import { fileURLToPath } from 'node:url'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vite'
 import vuetify from 'vite-plugin-vuetify'
-import laravel from 'laravel-vite-plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -58,6 +58,7 @@ export default defineConfig({
     },
   },
   build: {
+    sourcemap: true,
     chunkSizeWarningLimit: 5000,
   },
   optimizeDeps: {
